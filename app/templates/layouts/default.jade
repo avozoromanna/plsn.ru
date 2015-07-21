@@ -7,9 +7,12 @@ doctype html
 html(lang='ru')
 	include ../blocks/head
 	body
-		.main
-			include ../blocks/header
-			block content
-			include ../blocks/footer
+		.page-wrap
+			.page-header
+				include ../blocks/header
+			.page-content
+				block content
+			.page-footer
+				include ../blocks/footer
 
 		include ../blocks/scripts
